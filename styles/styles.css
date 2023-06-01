@@ -7,19 +7,19 @@
 
 /*Comienzo de las propiedades en común*/
 
-:is(.header, .section_index_1 > article, .section_index_2 > article, .section_index_2 > article > span) {
+:is(.header, .section_index_1 > article, .section_index_2 > article) {
   display: grid;
 }
 
-:is(header, nav, ul, section, .pres_img) {
+:is(header, nav, ul, section, .pres_img, .section_index_2 > article, .section_index_2 > article > span, .caract_icon) {
   display: flex;
 }
 
-:is(header, nav, ul, section, .pres_img) {
+:is(header, nav, ul, section, .pres_img, .caract_icon) {
   justify-content: center;
 }
 
-:is(header, nav) {
+:is(header, nav, .section_index_2>article>span ,.caract_icon) {
   align-items: center;
 }
 
@@ -46,7 +46,7 @@
   box-shadow: 0 0 10px #000;
 }
 
-header > img {
+header>img {
   width: 50%;
 }
 
@@ -83,28 +83,61 @@ a {
 /*-----------------------------------------------------------------------------------*/
 /*Comienzo del main*/
 
-
-/**/
 main {
   position: relative;
   margin: 20px 0 20px 0;
 }
 
-.section_index_1 > article {
+/*Creación de la presentación*/
+.section_index_1>article {
   grid-template-columns: repeat(2, 50%);
 }
 
-.pres_txt > h1{
-    font-size: 300%;
+.pres_txt>h1 {
+  font-size: 300%;
 }
 
-article > .pres_img > img {
+article>.pres_img>img {
   width: 70%;
 }
 
-.section_index_2 > article{
-    grid-template-columns: repeat(3, 33%);
+.section_index_2>article {
+  grid-template-columns: repeat(3, 33%);
 }
+
+/*Fin de la creación de la presentación*/
+
+/*Creación de la fila de las características de la empresa*/
+.section_index_2 {
+  background-color: #dbdbdb;
+  padding: 1% 0px 1% 0px;
+}
+
+.section_index_2>article {
+  gap: 3%;
+}
+
+.section_index_2>article>span {
+  gap: 2%;
+}
+
+.caract_icon {
+  position: relative;
+  width: 30%;
+  height: auto;
+}
+
+.caract_icon>img {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+}
+
+.section_index_2>article>span {
+  flex-direction: row;
+}
+
+/*Fin de la creación de la fila de las características de la empresa*/
 
 /*Fin del main*/
 /*-----------------------------------------------------------------------------------*/
@@ -124,14 +157,14 @@ footer {
 
 /*General*/
 
-section{
-    margin: 2% 0 2% 0;
+section {
+  margin: 2% 0 2% 0;
 }
 
 article {
   max-width: 80%;
 }
 
-img{
-    aspect-ratio: 16/9;
+img {
+  aspect-ratio: 16/9;
 }
