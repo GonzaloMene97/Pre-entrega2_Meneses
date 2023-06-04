@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-:is(.section_index_3 span, .section_nosotros_1 > article, .section_nosotros_2 > article){
+:is(.section_index_3 span, .section_nosotros_1 > article, .section_nosotros_2 > article) {
   flex-direction: column;
 }
 
@@ -150,15 +150,15 @@ article>.pres_img>img {
 
 /*Inicio de la creación de las cards de los diferentes trabajos*/
 
-.section_index_3 img{
+.section_index_3 img {
   width: 75%;
 }
 
-.section_index_3 a{
+.section_index_3 a {
   transition: 550ms;
 }
 
-.section_index_3 a:hover{
+.section_index_3 a:hover {
   transition: 500ms;
   opacity: 0.5;
 }
@@ -169,34 +169,35 @@ article>.pres_img>img {
 /*Inicio página nosotros.html*/
 /*Inicio de creación de .section_nosotros_1*/
 
-.section_nosotros_1 div{
+.section_nosotros_1 div {
   margin-bottom: 1%;
 }
 
-.section_nosotros_1 h2, .section_nosotros_2 h2{
+.section_nosotros_1 h2,
+.section_nosotros_2 h2 {
   font-size: 200%;
 }
 
-.m_v_v{
+.m_v_v {
   gap: 2%;
 }
 
-.section_nosotros_2 span{
+.section_nosotros_2 span {
   margin-bottom: 2%;
   padding: 1%;
   box-shadow: 0 0 10px #000;
 }
 
-.section_nosotros_2 img{
+.section_nosotros_2 img {
   width: 20%;
 }
 
-.span_gonzalo img{
+.span_gonzalo img {
   float: left;
   margin-right: 2%;
 }
 
-.span_carolina img{
+.span_carolina img {
   float: right;
   margin-left: 2%;
 }
@@ -208,9 +209,19 @@ article>.pres_img>img {
 /*Inicio de la página Proyecto*/
 /*Inicio de la seccion de fotografía*/
 
-.section_proyecto_1 img{
+.section_proyecto_1 img {
   width: 60%;
 }
+
+.section_proyecto_1 h2{
+  font-size: 2rem;
+}
+
+.section_proyecto_1 h3{
+  font-size: 1.4rem;
+}
+
+
 
 /*fin de la seccion de fotografía*/
 /*Fin de la página Proyecto*/
@@ -249,7 +260,7 @@ article {
   }
 }
 
-@media (max-width: 1099px){
+@media (max-width: 1099px) {
   .header {
     grid-template-columns: 40% auto 60%;
   }
@@ -258,12 +269,19 @@ article {
     font-size: 1rem;
     font-weight: 800;
   }
-  
+
   nav a:hover {
     font-size: 1.2rem;
   }
-  
+
+  .section_nosotros_2 span img {
+    width: 30%;
+  }
+
 }
 
-
-
+@media (max-width: 799px) {
+  .section_nosotros_2 span img {
+    width: 40%;
+  }
+}
