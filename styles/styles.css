@@ -39,7 +39,7 @@
   grid-column: 2;
 }
 
-:is(footer > p, .pres_txt > h1, .section_index_3 h2, .section_nosotros_1 h2, .m_v_v h3, .section_nosotros_2 h2, .section_proyecto_1 h2, .section_proyecto_1 h3) {
+:is(footer > p, .pres_txt > h1, .section_index_3 h2, .section_nosotros_1 h2, .m_v_v h3, .section_nosotros_2 h2, .section_proyecto_1 h2, .section_proyecto_1 h3, .section_proyecto_1 article > p, .section_proyecto_1 article > h4) {
   text-align: center;
 }
 
@@ -190,6 +190,7 @@ article>.pres_img>img {
 
 .section_nosotros_2 img {
   width: 20%;
+  
 }
 
 .span_gonzalo img {
@@ -220,8 +221,6 @@ article>.pres_img>img {
 .section_proyecto_1 h3{
   font-size: 1.4rem;
 }
-
-
 
 /*fin de la seccion de fotografía*/
 /*Fin de la página Proyecto*/
