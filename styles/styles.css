@@ -375,3 +375,27 @@ article {
     width: 80%;
   }
 }
+
+@media (max-width: 669px) {
+  .section_proyecto span{
+    grid-template-columns: 100%; 
+  }
+
+  .section_proyecto hr{
+    margin-top: 70%;
+  }
+
+  #gd{
+    margin-top: 50%;
+  }
+}
+
+@media (max-width: 420px) {
+  .section_proyecto img{
+    width: 80%;
+  }
+
+  .section_proyecto hr{
+    margin-top: 80%;
+  }
+}
