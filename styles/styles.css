@@ -208,7 +208,6 @@ article>.pres_img>img {
 /*Fin página nosotros.html*/
 
 /*Inicio de la página Proyecto*/
-/*Inicio de la seccion de fotografía*/
 
 .section_proyecto span {
   grid-template-columns: repeat(3, 33%);
@@ -240,8 +239,19 @@ article>.pres_img>img {
   color: #0000006b;
 }
 
-/*fin de la seccion de fotografía*/
 /*Fin de la página Proyecto*/
+
+.section_formulario form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form button{
+  text-align: center;
+  padding: 5px;
+  width: 55px;
+}
 
 /*Fin del main*/
 /*-----------------------------------------------------------------------------------*/
@@ -453,7 +463,7 @@ article {
 }
 
 @media (max-width: 669px) {
-  .section_index_1 article img{
+  .section_index_1 article img {
     width: 90%;
     height: auto;
   }

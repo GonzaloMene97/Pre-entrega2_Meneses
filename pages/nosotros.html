@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -112,11 +113,13 @@
                 </div>
             </article>
         </section>
+        <br>
         <!--Información de los fundadores de la empresa-->
         <section class="section_nosotros_2">
             <article>
                 <h2>Fundadores</h2>
-                <span class="span_gonzalo">
+                <br>
+                <span class="span_gonzalo" data-aos="fade-right">
                     <img src="../media/Fotografía/foto_gonza.jpg" alt="">
                     <p>Gonzalo Meneses, es un jóven adulto de 25 años, ex-estudiante de Informática (Desarrollo Web) con
                         conocimientos tanto en Front-End como en Back-End. También estudió para Analista en Base de
@@ -139,7 +142,7 @@
                         digitales.
                     </p>
                 </span>
-                <span class="span_carolina">
+                <span class="span_carolina" data-aos="fade-left">
                     <img src="../media/Fotografía/foto_caro.jpg" alt="">
                     <p>
                         Carolina Olivera, jóven de 25 años, ex-estudiante de Arquitectura y actualmente en Lic. Diseño
@@ -165,6 +168,10 @@
             &#169; 2023 ClavisDevs - Pixeladed Idea
         </p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
