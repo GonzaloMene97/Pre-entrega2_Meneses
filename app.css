@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+button{
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Código */
+.header {
+    width: 100%;
+    background-color: #0096c7;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+.header img{
+    width: 150px;
+}
+
+
+.header .button {
+    display: none;
+}
+
+.header .svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+}
+
+.header .ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.header .li {
+    margin: 0 .5em;
+    transition: 550ms;
+}
+
+.header .li:hover {
+    transition: 550ms;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:560px) {
+    .header{
+        flex-flow: row wrap;
+    }
+    .header .button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header .nav {
+        width: 100%;
+        /* display: none; */
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .nav.activo {
+        /* display: block; */
+        height: 50vh;
+        pointer-events: auto;
+    }
+
+    .header .ul {
+        flex-direction: column;
+    }
+
+    .header .li {
+        margin: 1rem 0;
+    }
+
+}
