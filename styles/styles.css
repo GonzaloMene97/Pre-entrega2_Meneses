@@ -71,8 +71,7 @@ header button {
 .header {
   width: 100%;
   background-color: #0096c7;
-  padding: 1em;
-
+  padding: 1%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -82,7 +81,7 @@ header button {
 }
 
 .header img {
-  width: 150px;
+  width: 200px;
 }
 
 
@@ -246,6 +245,36 @@ article>.pres_img>img {
 /*Fin de creación de .section_nosotros_1*/
 /*Fin página nosotros.html*/
 
+.section_clientes h1{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.section_clientes article{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section_clientes div{
+  box-shadow: 0 0 10px #000;
+  padding: 1%;
+}
+
+.section_clientes img {
+  width: 30%;
+}
+
+.section_clientes div:nth-child(odd) img{
+  float: left;
+  padding: 0 1% 1% 0;
+}
+
+.section_clientes div:nth-child(even) img{
+  float: right;
+  padding: 0 0 1% 1%;
+}
+
 /*Inicio de la página Proyecto*/
 
 .section_proyecto span {
@@ -329,6 +358,12 @@ article {
 @media (max-width: 1450px) {
   .section_proyecto img {
     width: 70%;
+  }
+}
+
+@media (max-width:1255px){
+  .section_clientes img{
+    width: 50%;
   }
 }
 
@@ -503,7 +538,6 @@ article {
 
   .header .nav {
     width: 100%;
-    /* display: none; */
     height: 0;
     pointer-events: none;
     overflow: hidden;
@@ -516,7 +550,6 @@ article {
   }
 
   .header .nav.activo {
-    /* display: block; */
     height: 50vh;
     pointer-events: auto;
   }
@@ -527,6 +560,10 @@ article {
 
   .header .li {
     margin: 1rem 0;
+  }
+
+  .section_clientes img{
+    width: 60%;
   }
 
 }
